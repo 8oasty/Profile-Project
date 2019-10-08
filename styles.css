@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: lightgray;
 }
 /* Link Styles */
 
@@ -61,10 +61,9 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
-header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
@@ -75,6 +74,7 @@ header .profile-image {
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+  border: 10px solid pink;
 }
 .tag {
   background-color: #efefef;
@@ -83,10 +83,14 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  transition: all .5s;
+} 
+.tag:hover {
+  border: 10px solid pink;
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  color: white;
 }
 .card {
   margin: 30px;
@@ -99,7 +103,20 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: blue;
+  border-color: lightsalmon;
+}
+.article {
+  margin: 30px;
+  padding: 20px 20px 40px;
+  max-width: 1200px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.article:hover{
+  border-color: pink;
 }
 
 ul.skills {
@@ -110,14 +127,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
-  color: white;
+  background: pink;
+  color: black;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: lightsalmon;
 }
 
 footer {
@@ -166,13 +183,30 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
+.company-logo {
+  width: 100px;
+  height: 60px;
+  border: 3px solid white;
+  transition: all .5s;
+  float: left;
+}
 
+.company-name {
+  padding-left: 120px;
+}
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+  .large-screen {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -187,7 +221,6 @@ a.social:hover {
     max-width: 1200px;
     padding: 0 30px;
   }
-
 
   main {
     padding-top: 20px;
@@ -204,4 +237,5 @@ a.social:hover {
   }
 
 }
+
 
