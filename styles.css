@@ -105,6 +105,10 @@ header .profile-image:hover {
 .card:hover {
   border-color: lightsalmon;
 }
+
+.article-title {
+  text-align: center;
+}
 .article {
   margin: 30px;
   padding: 20px 20px 40px;
