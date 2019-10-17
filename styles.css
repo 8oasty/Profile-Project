@@ -195,6 +195,14 @@ a.social:hover {
   float: left;
 }
 
+.hobbie-logo {
+  width: 100px;
+  height: 100px;
+  border: 3px solid white;
+  transition: all .5s;
+  float: left;
+}
+
 .company-name {
   padding-left: 120px;
 }
